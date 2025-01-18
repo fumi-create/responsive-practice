@@ -94,15 +94,20 @@
   background: #ff00e1;
 }
 
-.flex_position_q6 {
-  flex-direction: row;
+.flex_position_q6 div:first-of-type{
+  order: 1;
+}
+.flex_position_q6 div:nth-last-of-type(2){
+  order: 2;
+}
+.flex_position_q6 div:last-child{
+  order: 3;
 }
 
 /*Q7レスポンシブ前-------------------------------------------------------------------------------------------------------------------------*/
 
 .q7_box_a {
   background: #ff0000;
-  display: block;
 }
 
 .q7_box_b {
@@ -112,7 +117,6 @@
 
 .q7_box_c {
   background: #00ff51;
-  display: block;
 }
 
 /*レスポンシブ後------------------------------------------------------------------------------------------------------------------------*/
